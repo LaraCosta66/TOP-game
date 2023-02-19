@@ -43,6 +43,13 @@ function playRound(playerSelection, computerSelection) {
     roundResult = "Computer wins";
     computerScore++;
   }
+  if (playerScore === 5) {
+    resultDiv.textContent = "Player wins the game!";
+    disableButtons();
+  } else if (computerScore === 5) {
+    resultDiv.textContent = "Computer wins the game!";
+    disableButtons();
+  }
   resultDiv.textContent = `Round result: ${roundResult}`;
   scoreDiv.textContent = `Score: You ${playerScore} - ${computerScore} Computer`;
 }
@@ -69,18 +76,6 @@ function viewChoices(playerSelection, computerSelection) {
     case 'scissors':
       computer.textContent = '🖖'
       break
-  }
-}
-
-function game() {
-  playRound(playerSelection, computerSelection)
-  updateChoices(playerSelection, computerSelection)
-  if (playerScore === 5) {
-    resultDiv.textContent = "Player wins the game!";
-    disableButtons();
-  } else if (computerScore === 5) {
-    resultDiv.textContent = "Computer wins the game!";
-    disableButtons();
   }
 }
 function disableButtons() {
