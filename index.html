@@ -7,34 +7,44 @@
     <title>Pedra Papel e Tesoura</title>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.png" />
   </head>
   <body>
     <header>
-      <h1>Rock Paper Scissors</h1>
+      <h1>Pedra Papel Tesoura</h1>
+      <div class="btnReload">
+        <button type="button" class="reload" onClick="reloadPage()">
+          <img src="./assets/icon/refresh.svg" alt="refresh-icon" />
+        </button>
+      </div>
     </header>
-    <div id="result" class="result"></div>
-    <div class="round">
+    <div class="content">
+      <div id="result" class="result"></div>
+      <div class="round">
         <div id="player" class="player"></div>
         <div id="computer" class="computer"></div>
+      </div>
+      <div id="score" class="score"></div>
+      <div class="btn">
+        <button id="rock"><span>👊 Pedra</span></button>
+        <button id="paper"><span>🖐️ Papel</span></button>
+        <button id="scissors"><span>🖖 Tesoura</span></button>
+      </div>
+      <div class="btnMobile">
+        <button type="button" class="refresh" onClick="reloadPage()">
+          <img src="./assets/icon/refresh.svg" alt="refresh-icon" />
+        </button>
+      </div>
     </div>
-    <div id="score" class="score"></div>
-    <div class="btn">
-      <button id="rock"><span>👊 Rock</span></button>
-      <button id="paper"><span>🖐️ Paper</span></button>
-      <button id="scissors"><span>🖖 Scissors</span></button>
-    </div>
-   
   </body>
   <footer id="footer" class="footer">
-
     <span class="links">
-        <a href="https://www.linkedin.com/in/laracosta64/" target="_blank"
-          ><img src="./assets/icon/linkedinIcon.png" alt="linkedin icon" /> </a
-        >
-        <a href="https://github.com/LaraCosta66/" target="_blank"
-          ><img src="./assets/icon/githubIcon.png" alt="github icon" /> </a
-        >
+      <a href="https://www.linkedin.com/in/laracosta64/" target="_blank"
+        ><img src="./assets/icon/linkedin.svg" alt="linkedin icon" />
+      </a>
+      <a href="https://github.com/LaraCosta66/" target="_blank"
+        ><img src="./assets/icon/github.svg" alt="github icon" />
+      </a>
     </span>
     <span>&copy; Lara Costa</span>
   </footer>

@@ -83,3 +83,6 @@ function disableButtons() {
   btnPaper.disabled = true;
   btnScissors.disabled = true;
 }
+function reloadPage(){
+  window.location.reload();
+} 
